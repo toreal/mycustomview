@@ -40,14 +40,25 @@ public class MyView extends View {
        img=  BitmapFactory.decodeResource(getResources(),R.drawable.a);
     }
 
-    Bitmap img;
+    public void mymove(float dx,float dy)
+    {
+        sx =(int)dx;
+       // sy = (int)dy;
 
+    }
+
+
+    Bitmap img;
+   int sx=0;
+    int sy=0;
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         canvas.drawColor(Color.YELLOW);
-        canvas.drawBitmap(img,0,0,null);
+        canvas.drawBitmap(img,100+sx,100+sy,null);
+
+        //y=y+10;
 
     }
 
