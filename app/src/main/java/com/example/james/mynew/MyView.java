@@ -2,6 +2,8 @@ package com.example.james.mynew;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -9,6 +11,8 @@ import android.graphics.drawable.Drawable;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import static android.graphics.BitmapFactory.decodeResource;
 
 /**
  * TODO: document your custom view class.
@@ -33,14 +37,17 @@ public class MyView extends View {
 
     private void init(AttributeSet attrs, int defStyle) {
 
+       img=  BitmapFactory.decodeResource(getResources(),R.drawable.a);
     }
 
+    Bitmap img;
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         canvas.drawColor(Color.YELLOW);
+        canvas.drawBitmap(img,0,0,null);
 
     }
 
