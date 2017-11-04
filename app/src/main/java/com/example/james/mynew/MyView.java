@@ -19,7 +19,7 @@ import static android.graphics.BitmapFactory.decodeResource;
  */
  
  //fo test
- 
+ //test on mac
  
 public class MyView extends View {
 
