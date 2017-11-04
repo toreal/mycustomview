@@ -17,6 +17,8 @@ import static android.graphics.BitmapFactory.decodeResource;
 /**
  * TODO: document your custom view class.
  */
+ //test on mac
+ 
 public class MyView extends View {
 
 
